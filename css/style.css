@@ -593,3 +593,11 @@
 .bg-primary{
     background:#2584C8 !important ;
 }
+
+
+@media (max-width: 768px) {
+    .navbar-light .navbar-brand {
+      width: 85%;
+    }
+  }
+  
