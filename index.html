@@ -19,6 +19,8 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- En el head de tu página HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -198,14 +200,154 @@
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+        <img src="./img/CERRAJERÍA RELOJERÍA.png" alt="CERRAJERÍA - RELOJERÍA K&P MIRAFLORES" class="img-fluid m-0">
+
+       
+  <style>
+    .main-container {
+      max-width: 80%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      border: 5px solid #2584C8;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    .content-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    .btn-whatsapp {
+      background-color: #06B2F0;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-whatsapp i {
+      margin-left: 5px;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #2584C8;
+      transform: translateY(-2px) scale(1.05); /* Ajuste vertical y escala del botón en hover */
+    }
+
+    .btn-call {
+      background-color: #FF0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-call i {
+      margin-left: 5px;
+    }
+
+    .btn-call:hover {
+      background-color: #FF0000;
+      transform: translateY(-2px) scale(1.05); /* Ajuste vertical y escala del botón en hover */
+      color: #fff;
+    }
+
+    .description {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #FF0000;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        max-width: 100%;
+      }
+      .image-container,
+      .content-container {
+        flex: 100%;
+      }
+    }
+  </style>
+ 
+  <div class="main-container">
+    <div class="image-container">
+      <img src="img/Aprende-a-enviasar-f.png" alt="Imagen de ejemplo" style="max-width: 100%; height: auto; background: #2584C8; border-radius: 12px;">
+    </div>
+    <div class="content-container">
+      <a href="https://api.whatsapp.com/send?phone=51929248016" class="btn btn-whatsapp animated pulse">
+        Clic para enviar WhatsApp
+        <i class="fas fa-arrow-circle-right"></i>
+      </a>
+      <h2 class="description">ENVÍANOS FOTOS AL WHATSAPP Y TE DAMOS PRESUPUESTO.</h2>
+
+      <a href="tel:+51929248016" class="btn btn-call animated heartBeat">
+        Llamar ahora
+        <i class="fas fa-phone-alt"></i>
+      </a>
+    </div>
+  </div>
+          
+          
+          <style>
+            @keyframes bounceInDown {
+              0%, 60%, 75%, 90%, 100% {
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+              }
+              0% {
+                opacity: 0;
+                transform: translateY(-3000px);
+              }
+              60% {
+                opacity: 1;
+                transform: translateY(25px);
+              }
+              75% {
+                transform: translateY(-10px);
+              }
+              90% {
+                transform: translateY(5px);
+              }
+              100% {
+                transform: translateY(0);
+              }
+            }
+          
+            .animated {
+              animation-duration: 1s;
+              animation-fill-mode: both;
+            }
+          </style>
+          
+          
+<br><br>
+        <h2 class="text-center mb-5" style="color: #2584C8;">Nuestros Servicios</h2>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6 service-item-top wow fadeInUp" data-wow-delay="0.1s">
                 <div class="overflow-hidden">
                     <img class="img-fluid w-100 h-100" src="img/service-1.jpg" alt="">
                 </div>
                 <div class="d-flex flex-column align-items-center justify-content-between bg-light p-4">
-                    <h5 class="text-truncate me-3 mb-2">Apertura de Puertas</h5>
+                    <h5 class=" me-3 mb-2">Apertura de Puertas</h5>
                     <p class="text-truncate-2-lines mb-0">Servicio rápido y profesional de apertura de puertas residenciales y comerciales.</p>
                     <a class="btn btn-square btn-whatsapp border-2 border-white mt-3" href="https://api.whatsapp.com/send?phone=51912340287&text=Hola,%20quiero%20información%20sobre%20el%20servicio." target="_blank">
                         <i class="fab fa-whatsapp me-2"></i>Consultar</a>
