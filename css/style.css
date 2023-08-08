@@ -193,8 +193,10 @@
 
     .header-carousel .owl-carousel-item h5,
     .header-carousel .owl-carousel-item p {
-        font-size: 14px !important;
-        font-weight: 400 !important;
+        font-size: 18px !important;
+        font-weight: 900 !important;
+        font-family: sans-serif !important;
+        color: #000000;
     }
 
     .header-carousel .owl-carousel-item h1 {
