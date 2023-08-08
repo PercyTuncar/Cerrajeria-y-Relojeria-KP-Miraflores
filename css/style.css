@@ -196,7 +196,7 @@
         font-size: 18px !important;
         font-weight: 900 !important;
         font-family: sans-serif !important;
-        color: #000000;
+        color: #000000 !important;
     }
 
     .header-carousel .owl-carousel-item h1 {
