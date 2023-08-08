@@ -117,8 +117,7 @@
 }
 
 // Button for toggling the navbar when in its collapsed state
-.navbar-toggler {
-  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+.navbar-toggler { 
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
   background-color: transparent; // remove default button style
