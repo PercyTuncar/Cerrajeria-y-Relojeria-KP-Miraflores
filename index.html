@@ -866,36 +866,50 @@
             <div class="col-lg-8">
                 <div class="bg-light text-center p-5">
                     <h1 class="mb-4">Reserva un Servicio</h1>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Tu Nombre" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Tu Correo Electrónico" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <select class="form-select border-0" style="height: 55px;">
-                                    <option selected>Selecciona un Servicio</option>
-                                    <option value="1">Cerrajería</option>
-                                    <option value="2">Relojería</option> 
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="date" id="date1" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Fecha del Servicio" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0" placeholder="Solicitud Especial"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Reservar Ahora</button>
-                            </div>
+                    <form action="https://formspree.io/f/maygkokw" method="POST">
+                      <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                          <div class="form-floating">
+                            <input type="text" class="form-control border-0" id="name" name="name" placeholder="Tu Nombre" style="height: 55px;">
+                            <label for="name">Tu Nombre</label>
+                          </div>
                         </div>
+                        <div class="col-12 col-sm-6">
+                          <div class="form-floating">
+                            <input type="email" class="form-control border-0" id="email" name="email" placeholder="Tu Correo Electrónico" style="height: 55px;">
+                            <label for="email">Tu Correo Electrónico</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                          <div class="form-floating">
+                            <select class="form-select border-0" id="service" name="service" style="height: 55px;">
+                              <option selected>Selecciona un Servicio</option>
+                              <option value="Cerrajería">Cerrajería</option>
+                              <option value="Relojería">Relojería</option>
+                            </select>
+                            <label for="service">Selecciona un Servicio</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                          <div class="form-floating">
+                            <div class="date" id="date1" data-target-input="nearest">
+                              <input type="text" class="form-control border-0 datetimepicker-input" id="serviceDate" name="serviceDate" placeholder="Fecha del Servicio" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+                            </div>
+                            <label for="serviceDate">Fecha del Servicio</label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <textarea class="form-control border-0" id="specialRequest" name="specialRequest" placeholder="Solicitud Especial"></textarea>
+                            <label for="specialRequest">Solicitud Especial</label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary w-100 py-3" type="submit">Reservar Ahora</button>
+                        </div>
+                      </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
